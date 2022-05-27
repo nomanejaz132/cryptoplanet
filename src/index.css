@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ul li .active {
+    color: rgb(37 99 235);
+}
