@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import MarketCard from "../components/marketCard";
+import MarketTabel from "../components/marketTabel";
 
 const Market = () => {
   return (
@@ -49,9 +50,7 @@ const Market = () => {
             <MarketCard />
           </div>
         </div>
-        <div className="bg-[#121318] rounded-2xl p-[40px] flex flex-col md:flex-row items-center gap-5 lg:w-[1128px] mt-[30px]">
-          hh
-        </div>
+        <MarketTabel />
       </div>
     </div>
   );

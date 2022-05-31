@@ -2,7 +2,7 @@ import React from "react";
 
 const MarketCard = () => {
   return (
-    <div className="p-[20px] bg-[#080808] rounded-[8px] flex flex-row justify-between">
+    <div className="p-[20px] bg-[#080808] rounded-[8px] flex flex-row justify-between hover:cursor-pointer hover:drop-shadow-2xl">
       <div className="flex flex-col justify-center items-start">
         <div className="flex flex-row items-center">
           <svg
