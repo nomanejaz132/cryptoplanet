@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchMarket } from "../store/actions/marketData";
 import Header from "../components/header";
 import MarketCard from "../components/marketCard";
 import MarketTabel from "../components/marketTabel";
 
 const Market = () => {
+  const marketList = useSelector((state) => state.market);
+  console.log(marketList);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    async function fetchMarketData() {
+      await dispatch(fetchMarket());
+    }
+    fetchMarketData();
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <div className="bg-[#080808]">
       <Header />
